@@ -15,7 +15,7 @@ body {
 .page-wrapper {
     max-width: 900px;
     margin: 1.5rem auto;
-    background: linear-gradient(135deg, #f1c27d, #d19a66);
+    background: linear-gradient(135deg, #f0f0f0, #d2d2d2);
     padding: 1.5rem 2rem 2rem;
     border-radius: 4px;
 }
@@ -109,7 +109,7 @@ body {
 /* COLORED SECTIONS (Poem + Resume) */
 .poem-section,
 .resume-section {
-    background: linear-gradient(135deg, #f9d7a5, #e4a96b);
+    background: linear-gradient(135deg, #fff7db, #e9e2c9);
     border-radius: 12px;
     padding: 1.5rem;
     margin-top: 1.5rem;
