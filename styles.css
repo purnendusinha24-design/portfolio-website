@@ -96,6 +96,10 @@ body {
     background-image: url("images/seatbooking_cover.png");
 }
 
+.card-image-4 {
+    background-image: url("images/spider_solitaire_cover.png");
+}
+
 /* Buttons */
 .card-btn {
     padding: 0.5rem;
