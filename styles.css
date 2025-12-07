@@ -100,6 +100,10 @@ body {
     background-image: url("images/spider_solitaire_cover.png");
 }
 
+.card-image-5 {
+  background: linear-gradient(135deg, #1d4ed8, #f97316);
+}
+
 /* Buttons */
 .card-btn {
     padding: 0.5rem;
@@ -149,10 +153,6 @@ body {
     border-radius: 4px;
     padding: 0.4rem 0.8rem;
     cursor: pointer;
-}
-
-.card-image-5 {
-  background: linear-gradient(135deg, #1d4ed8, #f97316);
 }
 
 .poem-output {
