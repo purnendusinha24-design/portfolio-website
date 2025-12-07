@@ -1,19 +1,36 @@
-function openLink(url){window.open(url,"_blank");}
-document.getElementById("year").textContent=new Date().getFullYear();
-
-const plantInput=document.getElementById("plant-input");
-const animalInput=document.getElementById("animal-input");
-const makeBtn=document.getElementById("make-poem");
-const resetBtn=document.getElementById("reset-poem");
-const poemOutput=document.getElementById("poem-output");
-
-function makePoem(){
-  const plant=plantInput.value||"orchid";
-  const animal=animalInput.value||"dolphin";
-  poemOutput.innerHTML=`<h3>The ${plant} and the ${animal}</h3>
-  <p>Wake up the ${plant}</p><p>The morning has come</p>
-  <p>Rouse the ${animal}</p><p>The day is waiting to start</p>`;
+// year in footer
+const yearSpan = document.getElementById("year");
+if (yearSpan) {
+  yearSpan.textContent = new Date().getFullYear();
 }
-function resetPoem(){plantInput.value="";animalInput.value="";poemOutput.innerHTML="";}
-makeBtn.addEventListener("click",makePoem);
-resetBtn.addEventListener("click",resetPoem);
+
+// tiny poem generator
+const plantInput = document.getElementById("plantInput");
+const animalInput = document.getElementById("animalInput");
+const poemOutput = document.getElementById("poemOutput");
+const makeBtn = document.getElementById("makePoemBtn");
+const resetBtn = document.getElementById("resetPoemBtn");
+
+function makePoem() {
+  const plant = (plantInput.value || "sunflower").trim();
+  const animal = (animalInput.value || "fox").trim();
+
+  const lines = [
+    `In a field of ${plant}s, quiet and bright,`,
+    `A lone ${animal} wanders at the edge of night.`,
+    `Code hums softly like crickets in air,`,
+    `Debugging dreams with thoughtful care.`,
+  ];
+
+  poemOutput.textContent = lines.join("\n");
+}
+
+if (makeBtn && resetBtn && poemOutput) {
+  makeBtn.addEventListener("click", makePoem);
+
+  resetBtn.addEventListener("click", () => {
+    plantInput.value = "";
+    animalInput.value = "";
+    poemOutput.textContent = "";
+  });
+}
