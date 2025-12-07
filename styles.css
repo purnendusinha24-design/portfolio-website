@@ -83,6 +83,89 @@ body {
     background-position: center;
 }
 
+/* Project Card */
+.project-card {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  align-items: center;
+}
+
+.project-thumb img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.project-content h3 {
+  margin-bottom: 0.3rem;
+  font-size: 1.6rem;
+}
+
+.project-subtitle {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.project-features {
+  margin-left: 1.2rem;
+  margin-bottom: 1.3rem;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.project-btn.primary {
+  background: #c96c38;
+  color: #fff;
+}
+
+.project-btn.primary:hover {
+  background: #a75427;
+}
+
+.project-btn.secondary {
+  border: 2px solid #c96c38;
+  color: #c96c38;
+}
+
+.project-btn.secondary:hover {
+  background: #c96c38;
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+
 /* Project thumbnails */
 .card-image-1 {
     background-image: url("images/weathernow_cover.png");
