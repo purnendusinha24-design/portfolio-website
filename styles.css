@@ -151,6 +151,10 @@ body {
     cursor: pointer;
 }
 
+.card-image-5 {
+  background: linear-gradient(135deg, #1d4ed8, #f97316);
+}
+
 .poem-output {
     text-align: center;
     margin-top: 0.8rem;
