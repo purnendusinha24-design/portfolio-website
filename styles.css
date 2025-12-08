@@ -330,6 +330,58 @@ a:hover {
   background: radial-gradient(circle at top left, #22d3ee 0, #0f172a 45%, #020617 100%);
 }
 
+/* ==== ABOUT SECTION LAYOUT ==== */
+
+.about {
+  padding: 80px 0;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about-left img {
+  width: 320px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.about-right {
+  max-width: 600px;
+}
+
+.about-right h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.about-right p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-left img {
+    width: 260px;
+  }
+
+  .about-right {
+    max-width: 90%;
+  }
+}
+
 
 /* Poem section */
 .poem-grid {
