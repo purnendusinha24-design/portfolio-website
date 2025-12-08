@@ -326,6 +326,11 @@ a:hover {
   background-image: url("images/solitaire.jpg");
 }
 
+.project-shopease {
+  background: linear-gradient(135deg, #0ea5e9, #9333ea);
+}
+
+
 /* Poem section */
 .poem-grid {
   display: grid;
