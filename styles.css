@@ -315,7 +315,7 @@ a:hover {
 }
 
 .project-cafearoma {
-  background-image: url("images/latte-table.jpg");
+  background: radial-gradient(circle at top left, #f7b267 0, #1f130f 45%, #1f130f 100%);
 }
 
 .project-seatbooking {
