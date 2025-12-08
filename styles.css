@@ -327,7 +327,7 @@ a:hover {
 }
 
 .project-shopease {
-  background: radial-gradient(circle at top left, var(--color-secondary) 0, var(--color-hero-bg-dark) 45%, var(--color-hero-bg-darker) 100%);
+  background: radial-gradient(circle at top left, #22d3ee 0, #0f172a 45%, #020617 100%);
 }
 
 
