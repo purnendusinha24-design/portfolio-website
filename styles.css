@@ -311,7 +311,7 @@ a:hover {
 }
 
 .project-primenest {
-  background-image: url("images/primenest realty.jpg");
+  background: radial-gradient(circle at top left, #3b82f6 0, #050816 45%, #050816 100%);
 }
 
 .project-cafearoma {
