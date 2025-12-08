@@ -323,7 +323,7 @@ a:hover {
 }
 
 .project-solitaire {
-  background-image: url("images/solitaire.jpg");
+  background: radial-gradient(circle at top left, orange 0, #131333 45%, #131333 100%);
 }
 
 .project-shopease {
