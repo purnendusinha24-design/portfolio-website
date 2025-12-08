@@ -307,7 +307,7 @@ a:hover {
 
 /* Project thumbnails (set your actual image names) */
 .project-corporate {
-  background-image: url("images/business website.jpg");
+  background: radial-gradient(circle at top left, #0693e3 0, rgb(107, 0, 62) 45%, rgb(107, 0, 62) 100%);
 }
 
 .project-primenest {
