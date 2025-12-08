@@ -376,6 +376,10 @@ a:hover {
   background: radial-gradient(circle at top left, #22d3ee 0, #0f172a 45%, #020617 100%);
 }
 
+.project-momentumfit {
+  background: radial-gradient(circle at top left, #22c55e 0, #050816 42%, #020617 100%);
+}
+
 /* ==== ABOUT SECTION LAYOUT ==== */
 
 .about {
