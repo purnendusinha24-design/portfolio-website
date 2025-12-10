@@ -384,6 +384,10 @@ a:hover {
   background: radial-gradient(circle at top left, #fffff0 0, #800020 42%, #800020 100%);
 }
 
+.project-brightwave {
+  background: radial-gradient(circle at top left, #navy 0, #orange 42%, #green 100%);
+}
+
 /* ==== ABOUT SECTION LAYOUT ==== */
 
 .about {
