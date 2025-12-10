@@ -380,6 +380,10 @@ a:hover {
   background: radial-gradient(circle at top left, #22c55e 0, #050816 42%, #020617 100%);
 }
 
+project-aurielle {
+  background: radial-gradient(circle at top left, #fffff0 0, #800020 42%, #800020 100%);
+}
+
 /* ==== ABOUT SECTION LAYOUT ==== */
 
 .about {
