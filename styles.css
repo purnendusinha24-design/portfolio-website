@@ -388,6 +388,10 @@ a:hover {
   background: radial-gradient(circle at top left, orange 0, green 42%, navy 100%);
 }
 
+.project-hopehands {
+  background: radial-gradient(circle at top left, orange 0, green 42%, navy 100%);
+}
+
 /* ==== ABOUT SECTION LAYOUT ==== */
 
 .about {
