@@ -409,6 +409,46 @@
     </div>
   </footer>
 
+  <!-- CHATBOT TOGGLE -->
+<div class="chat-toggle" onclick="toggleChat()">💬</div>
+
+<!-- CHATBOT -->
+<div class="chatbot" id="chatbot">
+ <div class="chat-header">
+  <span>Chat with me</span>
+
+  <div class="chat-actions">
+    <button class="chat-reset" onclick="resetChat()" title="Start new chat">
+      ↻
+    </button>
+    <span onclick="toggleChat()">✖</span>
+  </div>
+</div>
+
+
+  <div class="chat-body" id="chatBody">
+    <div class="bot">
+      Hi 👋 What would you like to do?
+    </div>
+
+    <div class="suggestions" id="suggestions">
+      <button onclick="sendSuggestion('projects')">View Projects</button>
+      <button onclick="sendSuggestion('hire')">Hire Me</button>
+      <button onclick="sendSuggestion('recruiter')">Recruiter</button>
+      <button class="whatsapp" onclick="sendSuggestion('whatsapp')">WhatsApp</button>
+    </div>
+  </div>
+
+  <div class="chat-footer">
+    <input
+      type="text"
+      id="userInput"
+      placeholder="Type a message and press Enter…"
+    />
+    <button onclick="sendMessage()">Send</button>
+  </div>
+</div>
+
   <script src="script.js"></script>
 </body>
 </html>
