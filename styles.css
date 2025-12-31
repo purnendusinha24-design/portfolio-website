@@ -15,6 +15,20 @@
   --muted: #b3b8d0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+h1, h2, h3 {
+  font-weight: 700;
+}
+p {
+  color: #e0e4ec;
+}
+
 body {
   margin: 0;
   min-height: 100vh;
@@ -236,6 +250,20 @@ a:hover {
 .section-subtitle {
   margin: 0 0 1.6rem;
   color: var(--muted);
+}
+
+a:hover, button:hover {
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+  color: #38bdf8;
+}
+
+.project-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Projects grid */
@@ -738,4 +766,19 @@ a:hover {
 .chat-reset:hover {
   transform: rotate(-20deg);
   opacity: 0.8;
+}
+
+.socials {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.socials a {
+  font-weight: 600;
+  color: #38bdf8;
+  text-decoration: none;
+}
+.socials a:hover {
+  text-decoration: underline;
 }
