@@ -779,20 +779,6 @@ button:hover {
     grid-template-columns: 1fr;
     gap: 0.8rem;
   }
-
-@keyframes jump {
-  0% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-14px);
-  }
-  70% {
-    transform: translateY(-8px);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 @media (max-width: 768px) {
@@ -806,5 +792,20 @@ button:hover {
 
   .hero {
     padding-top: 120px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-14px);
+  }
+  70% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
