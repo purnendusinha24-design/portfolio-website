@@ -464,6 +464,11 @@ button:hover {
   text-align: center;
 }
 
+.stat-value {
+  display: flex;
+  align-items: baseline; /* 👈 keeps + aligned with number */
+}
+
 .stat-number {
   font-size: 2.6rem;
   font-weight: 700;
@@ -476,6 +481,7 @@ button:hover {
   font-weight: 700;
   color: var(--accent);
   margin-left: 2px;
+  line-height: 1;
 }
 
 .stat-label {
