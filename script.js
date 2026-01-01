@@ -141,3 +141,38 @@ function openWhatsApp(message) {
   const url = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
   window.open(url, "_blank");
 }
+
+const counters = document.querySelectorAll(".stat-number");
+
+const animateCounters = () => {
+  counters.forEach(counter => {
+    const target = +counter.dataset.target;
+    const speed = 120; // smaller = faster
+
+    const updateCount = () => {
+      const current = +counter.innerText;
+      const increment = Math.ceil(target / speed);
+
+      if (current < target) {
+        counter.innerText = current + increment;
+        setTimeout(updateCount, 30);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    updateCount();
+  });
+};
+
+const observer = new IntersectionObserver(
+  entries => {
+    if (entries[0].isIntersecting) {
+      animateCounters();
+      observer.disconnect(); // run only once
+    }
+  },
+  { threshold: 0.5 }
+);
+
+observer.observe(document.querySelector(".experience-stats"));
