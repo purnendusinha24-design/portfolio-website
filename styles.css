@@ -19,9 +19,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  font-family: 'Inter', sans-serif;
-}
 h1, h2, h3 {
   font-weight: 700;
 }
@@ -60,10 +57,10 @@ a:hover {
 /* Header */
 .site-header {
   position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  padding: 18px 28px;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 150;
   background: transparent;
 }
 
@@ -73,13 +70,6 @@ a:hover {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
-}
-
-.header-inner {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  align-items: center;
-  padding-block: 1rem;
 }
 
 .site-header .container {
@@ -102,12 +92,6 @@ a:hover {
   filter: drop-shadow(0 0 12px rgba(56,189,248,0.25));
 }
 
-.nav {
-  display: flex;
-  gap: 1.2rem;
-  font-size: 0.95rem;
-}
-
 .nav-pill {
   display: flex;
   gap: 22px;
@@ -116,8 +100,8 @@ a:hover {
   background: rgba(15, 23, 42, 0.65);
   backdrop-filter: blur(14px);
   border: 1px solid rgba(255,255,255,0.08);
-  justify-self: center;
 }
+
 
 .nav-pill a {
   color: #cbd5e1;
@@ -785,16 +769,6 @@ a:hover, button:hover {
     gap: 0.8rem;
   }
 
-  .nav-center {
-    justify-content: flex-start;
-    flex-wrap: wrap;
-  }
-
-  .header-spacer {
-    display: none;
-  }
-}
-
 @keyframes jump {
   0% {
     transform: translateY(0);
@@ -811,16 +785,15 @@ a:hover, button:hover {
 }
 
 @media (max-width: 768px) {
-  .header-wrap {
-    grid-template-columns: auto auto;
-    gap: 12px;
-  }
-
   .nav-pill {
-    display: none; /* hide pill on mobile */
+    display: none;
   }
 
-  .logo {
+  .floating-logo img {
     width: 70px;
+  }
+
+  .hero {
+    padding-top: 120px;
   }
 }
