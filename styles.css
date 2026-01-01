@@ -471,13 +471,6 @@ button:hover {
   line-height: 1;
 }
 
-.plus {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: var(--accent);
-  margin-left: 2px;
-}
-
 .stat-label {
   margin-top: 6px;
   font-size: 0.75rem;
