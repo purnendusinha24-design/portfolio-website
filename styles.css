@@ -78,13 +78,19 @@ a:hover {
   padding-block: 1rem;
 }
 
+.site-header .container {
+  padding-left: 1rem;   /* tighter left */
+  padding-right: 1rem;
+}
+
 .brand {
   display: flex;
   align-items: center;
+  justify-self: start; /* 👈 hard left */
 }
 
 .logo {
-  width: 72px;          /* 👈 BIGGER LOGO */
+  width: 120px;          /* 👈 BIGGER LOGO */
   height: auto;
 }
 
@@ -97,12 +103,12 @@ a:hover {
 .nav-center {
   display: flex;
   justify-content: center;
-  gap: 1.6rem;
+  gap: 1.8rem;
   font-size: 1rem;
 }
 
 .header-spacer {
-  width: 72px; /* same visual weight as logo */
+  width: 96px; /* same visual weight as logo */
 }
 
 .nav a {
@@ -128,6 +134,14 @@ a:hover {
 
 .nav a:hover::after {
   width: 100%;
+}
+
+.logo {
+  transition: transform 0.25s ease;
+}
+
+.logo:hover {
+  transform: scale(1.08);
 }
 
 /* ===== HERO TWO-COLUMN LAYOUT ===== */
