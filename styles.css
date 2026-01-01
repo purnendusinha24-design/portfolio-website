@@ -809,3 +809,18 @@ a:hover, button:hover {
     transform: translateY(0);
   }
 }
+
+@media (max-width: 768px) {
+  .header-wrap {
+    grid-template-columns: auto auto;
+    gap: 12px;
+  }
+
+  .nav-pill {
+    display: none; /* hide pill on mobile */
+  }
+
+  .logo {
+    width: 70px;
+  }
+}
