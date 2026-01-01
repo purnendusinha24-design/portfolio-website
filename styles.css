@@ -92,7 +92,7 @@ a:hover {
 
 .floating-logo img {
   width: 100px;
-  height: auto;
+  height: 200px;
   filter: drop-shadow(0 0 12px rgba(56,189,248,0.25));
   transition: transform 0.25s ease;
 }
