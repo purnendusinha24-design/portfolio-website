@@ -445,29 +445,62 @@ button:hover {
   color: #f5f5f7;
 }
 
-.experience-card {
+.experience-stats {
   display: flex;
-  margin: 30px 0;
+  align-items: center;
+  gap: 28px;
+  margin-top: 32px;
   padding: 20px 28px;
-  border-radius: 16px;
-  text-align: center;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   width: fit-content;
 }
 
-.experience-number {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: var(--accent);
-  display: block;
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.experience-label {
-  font-size: 0.9rem;
+.stat-number {
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.plus {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin-left: 2px;
+}
+
+.stat-label {
+  margin-top: 6px;
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
   color: var(--muted);
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+}
+
+.stat-divider {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.25);
+  font-weight: 300;
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+  .experience-stats {
+    gap: 18px;
+    padding: 16px 20px;
+  }
+
+  .stat-number {
+    font-size: 2.2rem;
+  }
 }
 
 .about-actions {
