@@ -85,13 +85,13 @@ a:hover {
 
 .floating-logo {
   position: fixed;
-  top: 22px;
+  top: 18px;
   left: 28px;
   z-index: 200;
 }
 
 .floating-logo img {
-  width: 100px;
+  width: 200px;
   height: 200px;
   filter: drop-shadow(0 0 12px rgba(56,189,248,0.25));
   transition: transform 0.25s ease;
